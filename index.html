@@ -1,57 +1,101 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/style.css"> <!--chamar a pasta e arquivo-->
-<title>FLASHCARD</title>
-</head>
+:root {
+    --text color: #000;
+    --card-front-color:#88076c;
+    --card-back-color:#f689fadc;
+    }
+    
+    body {
+        background-color:rgb(148, 85, 162);
+        front-family: Bai Jamjuree;
+    }
+    
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 4rem;
+        gap: 3rem;
+    }
+    
+    .cartao:hover .cartao__conteudo {
+        transform: rotateY(180deg);
+    }
+    
+    footer {
+        background-color:lightblue;
+        color:rgba(160, 95, 201, 0.932);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 2rem;
+    
+        }
+    
+        footer p {
+            text-align: center;
+            font-size: 0.6rem;
+            margin-top: 0.5rem;
+            }
+    
+                .cartao {
+                    margin: 1rem 1rem;
+                    background-color:blanchedalmond;
+                    height: 20rem;
+                    flex-grow: 1;
+                    flex-basis: calc(33% - 6rem);
+                    }
+    
+                    .cartao__conteudo {
+                        text-align: center;
+                        height: 100%;
+                        transform-style: preserve-3d;
+                        transition: transform 300ms ease-in-out;
+                        }
+    
+                        
+                        .cartao__conteudo h3 {
+                            color: var(--text-color);
+                            border: 1px solid var(--text-color);
+                            text-align: left;
+                            padding: 0.5rem;
+                            position: absolute;
+                            margin: 0.6rem;
+                            border-radius: 0.6rem;
+                            font-size: 1vw;
+                            backface-visibility: hidden;
+                        }
+    
+                        .cartao_conteudo__pergunta p {
+                            color: var(--text-color);
+                            font-weight: 500;
+                            padding-top: 4rem;
+                        }
+                        
+    .cartao__conteudo__resposta {
+        backface-visibility: hidden;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    
+    .cartao__conteudo p {
+        margin-top: 1rem;
+        padding: 2rem;
+        margin-top: 4rem;
+        font-size: 1.4vw;
+    }
+    
 
-<body>
-    <main> <!--parte principal-→
-<section id= "container"> <!--área centralizada na página (um tipo de caixa na parte principal)-->
-    <article class="cartao"> <!--1ocartão--><!--article representa uma composição independente em um
-documento-->
-        <div class="cartao__conteudo"><!--Dentro do cartão principal, vamos ter o conteúdo desse cartão-->
-            <h3> Programação </h3><!--nome da categoria-->
-        <div class="cartao__conteudo__pergunta"> <!--para criar a parte da pergunta-->
-            <p> O que é JavaScript?</p> <!--pergunta-->
-        </div>
-        <div class= "cartao__conteudo__resposta"> <!--para criar a resposta-->
-            <p> O JavaScript é uma linguagem de programação.</p><!--resposta-->
-        </div>
-        </div>
-    </article>
 
-<!--COLOCAR A EDENTAÇÃO CONFORME A EDENTAÇÃO ACIMA-->
-<article class="cartao"><!--2ocartão-->
-<div class="cartao__conteudo">
-<h3> Programação </h3>
-<div class="cartao__conteudo__pergunta">
-<p> O que é CSS?</p>
-</div>
-<div class="cartao__conteudo__resposta">
-<p>O CSS é uma linguagem de estilização.</p>
-</div>
-</div>
-</article>
 
-<article class="cartao"> <!--3ocartão-->
-    <div class="cartao__conteudo">
-        <h3> Programação </h3>
-    <div class="cartao__conteudo__pergunta">
-<p> O que é HTML?</p>
-    </div>
-    <div class="cartao__conteudo__resposta">
-<p>O HTML (Linguagem de Marcação de HiperTexto).</p>
-    </div>
-    </div>
-</article>
 
-</section>
-    </main>
-        <footer>    
-        <p>Projeto desenvolvido pela Alura, sem fins lucrativos.</p>
-        </footer>
-    </body>
-</html>
+
+
+
+
