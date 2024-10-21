@@ -5,7 +5,7 @@
         }
         
         body {
-            background-color:rgb(148, 85, 162);
+            background-color:rgb(92, 211, 247);
             front-family: Bai Jamjuree;
         }
         
@@ -22,8 +22,8 @@
         }
         
         footer {
-            background-color:lightblue;
-            color:rgba(160, 95, 201, 0.932);
+            background-color:rgb(124, 5, 124);
+            color:rgba(231, 228, 51, 0.932);
             position: fixed;
             bottom: 0;
             width: 100%;
